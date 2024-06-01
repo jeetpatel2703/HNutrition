@@ -49,6 +49,20 @@ Before running the application, make sure you have the following installed:
 
 Contributions are welcome! If you find any bugs or have suggestions for improvement, feel free to open an issue or submit a pull request.
 
+## How to Contribute
+
+   1. Fork the repository and clone it to your local machine.
+   2. Create a new branch for your feature or bugfix.
+   3. Make your changes and commit them with clear, descriptive commit messages.
+   4. Push your changes to your fork.
+   5. Submit a pull request to the `main` branch of the original repository.
+
+## Coding Standards
+
+   - Follow the existing coding style.
+   - Write clear and concise commit messages.
+   - Add comments to your code where necessary.
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
