@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Items</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: #333;
+            margin-top: 50px;
+        }
+
+        .catego {
+            display: block;
+            text-align: center;
+            margin: 20px auto; 
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .catego:hover {
+            background-color: #0056b3;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        td {
+            background-color: #fff;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Food Items</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Calories</th>
+            <th>Protein (g)</th>
+            <th>Fat (g)</th>
+            <th>Carbohydrates (g)</th>
+        </tr>
+        {% for item in items %}
+        <tr>
+            <td><b>{{ item.name.capitalize() }}</b></td>
+            <td>{{ item.calories }}</td>
+            <td>{{ item.protein }}</td>
+            <td>{{ item.fat }}</td>
+            <td>{{ item.carbohydrates }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/categories" class="catego">Back to Categories</a>
+</body>
+</html>

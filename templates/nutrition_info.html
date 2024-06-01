@@ -1,0 +1,15 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutritional Information</title>
+</head>
+<body>
+    <h1>Nutritional Information</h1>
+    <p>Calories: {{ info.calories }}</p>
+    <p>Protein: {{ info.protein }}</p>
+    <p>Fat: {{ info.fat }}</p>
+    <p>Carbohydrates: {{ info.carbohydrates }}</p>
+    <a href="/items/{{ info.item_id }}">Back to Food Items</a>
+</body>
+</html>
